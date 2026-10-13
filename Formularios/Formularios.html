@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo mor</title>
+    <style>
+        body{
+            background-image:url(sorpresa.jpg) ;
+        }
+        h2,p{
+            display: inline;
+            color: #ff0000;
+            font-size: 70px;
+        }
+        input{
+            font-size: 70px;
+        }
+        p{
+            font-size: 50px;
+        }
+        input[type="checkbox"] {
+            transform: scale(4);
+            margin: 15px;
+            cursor: pointer;
+
+        }
+        .contenedor {
+            position: relative; /* Necesario para posicionar elementos hijos */
+        }
+        img {
+            position: absolute; /* Permite mover la imagen */
+            top: 50px; /* Mueve hacia abajo 50px */
+            left: 1300px; /* Mueve hacia la derecha 30px */
+        }
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <img src="pinguino.jpg" width="500" height="500">
+</div>
+
+<form action="ejemplo.php" method="get">
+    <h2>Nombre:</h2>
+    <br>
+    <input type="text" name="w">
+    <br><br><br>
+    <h2>Apellidos:</h2>
+    <br>
+    <input type="text" name="e">
+    <br><br><br>
+    <h2>Gmail:</h2>
+    <br>
+    <input type="text" name="r">
+    <br><br><br>
+    <h2>Contraseña:</h2>
+    <br>
+    <input type="text" name="t">
+    <br><br><br>
+    <h2>Confirmar Contraseña:</h2>
+    <br>
+    <input type="text" name="y">
+    <br><br><br>
+    <input type="checkbox"value="Aceptas terminos y condiciones"/><p>Aceptas terminos y condiciones</p>
+    <br><br><br>
+    <input type="submit" value="Registrar">
+</form>
+</body>
+</html>
