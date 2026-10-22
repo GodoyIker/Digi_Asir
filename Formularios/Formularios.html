@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <title>Ejemplo mor</title>
     <style>
-        body{
-            background-image:url(sorpresa.jpg) ;
-        }
         h2,p{
             display: inline;
-            color: #ff0000;
+            color: #000000;
             font-size: 70px;
         }
         input{
@@ -24,21 +21,14 @@
             cursor: pointer;
 
         }
-        .contenedor {
-            position: relative; /* Necesario para posicionar elementos hijos */
-        }
         img {
-            position: absolute; /* Permite mover la imagen */
-            top: 50px; /* Mueve hacia abajo 50px */
-            left: 1300px; /* Mueve hacia la derecha 30px */
+            position: absolute;
+            top: 50px;
+            left: 1300px;
         }
     </style>
 </head>
 <body>
-<div class="contenedor">
-    <img src="pinguino.jpg" width="500" height="500">
-</div>
-
 <form action="ejemplo.php" method="get">
     <h2>Nombre:</h2>
     <br>
