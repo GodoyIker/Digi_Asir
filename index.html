@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        aside{
+            margin-top: auto ;
+        }
+        main{
+            width: 80%;
+            margin: auto;
+        }
+        div {
+            display: flex;
+            width: 300px;
+            height: 150px;
+            border: 5px solid #333;
+            border-radius: 20px;
+            background: #f0f0f0;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            position: relative;
+            margin-left: 50px;
+        }
         .abajo{
             font-size: 20px;
             color: #000000;
@@ -17,15 +37,21 @@
             width: 100%;
             top: 0;
             position: static;
+            margin: 0;
+            padding: 0;
         }
         body{
            background-color: #bfe6f1;
-            margin-top: 0px;
+            margin-top: 0;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1{
             color: white;
             text-align: center;
+            justify-content: center;
         }
         h1.Ejercicio{
             color: #0b1b30;
@@ -39,28 +65,39 @@
         a{
             color: #000000;
             text-decoration: none;
-            font-size: 35px;
+            font-size: 15px;
+            text-align: center;
         }
         a:hover{
             color: #404040;
             text-decoration: underline;
 
         }
+
     </style>
 </head>
 <body>
-<div class="bloque">
+<nav class="bloque">
     <br>
     <h1>Hola</h1>
-    <p>Soy Iker Godoy estudio ASIR aqui estaran los ejercicios que haga a lo largo del año.</p></div>
+    <p>Soy Iker Godoy estudio ASIR aqui estaran los ejercicios que haga a lo largo del año.</p></nav>
 <h1 class="Ejercicio"><u>Ejercicios unidad 1</u>:</h1>
-<a href="Curriculum/Curriculum.html"><h2>1.EJERCICIO CURRICULUM</h2></a>
-<a href="EjercicioTortillaPatata/ejertortilla.html"><h2>2.EJERCICIO TORTILLA PATATA</h2></a>
-<a href="Formularios/Formularios.html"><h2>3.FORMULARIO 1</h2></a>
-<a href="Formularios/FORMLARIO1.html"><h2>4.FORMULARIO 2</h2></a>
+<main>
+<div class="marcos"><a href="Curriculum/Curriculum.html"><h2>1.EJERCICIO CURRICULUM</h2></a></div>
+
+<div class="marcos2"><a href="EjercicioTortillaPatata/ejertortilla.html"><h2>2.EJERCICIO TORTILLA PATATA</h2></a></div>
+
+<div class="marcos3">
+    <a href="Formularios/Formularios.html"><h2>3.FORMULARIO 1</h2></a>
+</div>
+    <div> <a href="Formularios/FORMLARIO1.html"><h2>4.FORMULARIO 2</h2></a></div>
+</main>
 <br><br>
-<p class="abajo"><b>Centro de estudios SEIM</b></p>
-<hr>
-<p class="abajo">Iker Godoy</p>
+<aside>
+    <p class="abajo"><b>Centro de estudios SEIM</b></p>
+    <hr>
+    <p class="abajo">Iker Godoy</p>
+</aside>
+
 </body>
 </html>
